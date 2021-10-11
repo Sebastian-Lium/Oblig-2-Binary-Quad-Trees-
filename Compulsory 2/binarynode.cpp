@@ -123,17 +123,17 @@ int BinaryNode::maxDepth(BinaryNode* node)
 
 bool BinaryNode::isBalanced(BinaryNode* root)
 {
-    int lh;
-    int rh;
+    int lDepth;
+    int rDepth;
 
     if (root == NULL) {
         return 1;
     }
 
-    lh = maxDepth(root->m_left);
-    rh = maxDepth(root->m_right);
+    lDepth = maxDepth(root->m_left);
+    rDepth = maxDepth(root->m_right);
 
-    if (abs(lh - rh) <= 1 && isBalanced(root->m_left) && isBalanced(root->m_right)) {
+    if (abs(lDepth - rDepth) <= 1 && isBalanced(root->m_left) && isBalanced(root->m_right)) {
         return 1;
     }
 
