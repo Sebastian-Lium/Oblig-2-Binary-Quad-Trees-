@@ -11,7 +11,7 @@ QuadTree::QuadTree(const Vector2D& v1, const Vector2D& v2, const Vector2D& v3, c
 {
 //
 }
-
+//jnasdjnasdnasndjoansdojansjdna
 void QuadTree::subDivide(int n)
 {
 	if (n > 0) {
