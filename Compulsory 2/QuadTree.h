@@ -15,6 +15,7 @@ class QuadTree {
 	QuadTree* m_ne;
 	std::vector<GameObject> m_gameObjects;
 	bool isLeaf() const;
+	//aasdasdadasdsdasdasdadasdaeda
 
 public:
 	QuadTree();
